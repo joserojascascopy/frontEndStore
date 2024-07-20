@@ -85,7 +85,8 @@ h3 {
   padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem; /* Forma nueva de separar los enlaces en la navegación, aún no tiene un buen soporte caniuse.com */
+  gap: 2rem;
+  /* Forma nueva de separar los enlaces en la navegación, aún no tiene un buen soporte caniuse.com */
 }
 
 .navegacion__enlace {
@@ -99,10 +100,11 @@ h3 {
     margin-right: 0;
 } Forma antigua de separar los enlaces en la navegación*/
 
-.navegacion__enlace--activo, /* -- es un modificador */
+.navegacion__enlace--activo,
+/* -- es un modificador */
 .navegacion__enlace:hover {
   color: var(--amarillo);
-} 
+}
 
 /* Footer */
 
@@ -143,24 +145,25 @@ h3 {
 }
 
 .producto__imagen {
-    width: 100%;
+  width: 100%;
 }
 
 .producto__nombre {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .producto__precio {
-    font-size: 2.8rem;
-    color: var(--amarillo);
+  font-size: 2.8rem;
+  color: var(--amarillo);
 }
 
 .producto__nombre,
 .producto__precio {
-    font-family: var(--fuentePrincipal);
-    margin: 1rem 0; /* Al inspeccionar lo naranja es el margen */
-    text-align: center;
-    line-height: 1.2;
+  font-family: var(--fuentePrincipal);
+  margin: 1rem 0;
+  /* Al inspeccionar lo naranja es el margen */
+  text-align: center;
+  line-height: 1.2;
 }
 
 /* Gráficos */
@@ -183,11 +186,13 @@ h3 {
   grid-row: 8 / 9;
 }
 
-@media (min-width: 768px) { /* Va dentro de un Media Querie para no generar conflicto al achicar la pantalla, porque nuestras columnas van del 1 al 3 */
+@media (min-width: 768px) {
+
+  /* Va dentro de un Media Querie para no generar conflicto al achicar la pantalla, porque nuestras columnas van del 1 al 3 */
   .grafico--node {
     grid-column: 2 / 4;
     grid-row: 5 / 6;
-  }  
+  }
 }
 
 /* Nosotros */
@@ -203,16 +208,16 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    .nosotros {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 2rem;
-    }
+  .nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
-    .nosotros__imagen {
-      grid-column: 2 / 3;
-    }
+  .nosotros__imagen {
+    grid-column: 2 / 3;
+  }
 }
 
 /* Porqué comprar con nosotros */
@@ -224,9 +229,9 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    .iconos {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  .iconos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .icono__imagen {
@@ -249,10 +254,10 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    .remera {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 2rem;
-    }
+  .remera {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 .remera__imagen {
@@ -270,7 +275,8 @@ h3 {
   grid-column: 1 / 3;
 }
 
-.formulario__submit:hover { /* Porque al darle estilo pierde la "manita" que tienen los enlaces */
+.formulario__submit:hover {
+  /* Porque al darle estilo pierde la "manita" que tienen los enlaces */
   cursor: pointer;
   background-color: var(--amarilloOscuro);
 }
